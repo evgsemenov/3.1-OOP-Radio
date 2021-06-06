@@ -40,10 +40,13 @@
                 <configuration>
                     <rules>
                         <rule>
-                            <element>BUNDLE</element>
+                            <element>METHOD</element>
+                            <excludes>
+                                <exclude>RadioTest</exclude>
+                            </excludes>
                             <limits>
                                 <limit>
-                                    <counter>BRANCH</counter>
+                                    <counter>COMPLEXITY</counter>
                                     <value>COVEREDRATIO</value>
                                     <minimum>0.0</minimum>
                                 </limit>
