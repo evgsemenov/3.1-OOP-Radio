@@ -95,6 +95,7 @@ class RadioTest {
 
 
     }
+
     @Test
     public void shouldIncreaseCurrentVolumeEqualMaxVolume() {
         Radio radio = new Radio();
@@ -118,6 +119,7 @@ class RadioTest {
 
 
     }
+
     @Test
     public void shouldDecreaseCurrentVolumeEqualMinVolume() {
         Radio radio = new Radio();
@@ -129,9 +131,23 @@ class RadioTest {
 
 
     }
+
+    @Test
+    public void shouldReturnCurrentVolumeOverMaxVolume() {
+        Radio radio = new Radio();
+        radio.setCurrentVolume(11);
+        int expected = 0;
+        assertEquals(expected, radio.getCurrentVolume());
+    }
+
+    @Test
+    public void shouldReturnCurrentVolumeUnderMinVolume() {
+        Radio radio = new Radio();
+        radio.setCurrentVolume(-1);
+        int expected = 0;
+        assertEquals(expected, radio.getCurrentVolume());
+    }
 }
-
-
 
 
 
