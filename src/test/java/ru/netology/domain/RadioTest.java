@@ -94,9 +94,8 @@ class RadioTest {
     @Test
     public void shouldIncreaseCurrentVolumeUnderMaxVolume() {
         Radio radio = new Radio();
-//        int currentVolume = 9;
         int currentVolume = radio.getCurrentVolume();
-        int expected = 10;
+        int expected = 1;
         radio.increaseVolume();
         assertEquals(expected, radio.getCurrentVolume());
 
