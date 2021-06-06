@@ -5,13 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RadioTest {
-//    @Test
-//    public void shouldGetAndSetRadioOn(){
-//        Radio radio = new Radio();
-//        boolean expected = false;
-//        radio.setRadioOn(expected);
-//        assertEquals(expected, radio.isRadioOn());
-//}
 
     @Test
     public void shouldIncreaseCurrentFrequencyUnderMaxFrequency() {
@@ -91,16 +84,16 @@ class RadioTest {
 
     }
 
-    @Test
-    public void shouldIncreaseCurrentVolumeUnderMaxVolume() {
-        Radio radio = new Radio();
-        int currentVolume = radio.getCurrentVolume();
-        int expected = 1;
-        radio.increaseVolume();
-        assertEquals(expected, radio.getCurrentVolume());
-
-
-    }
+//    @Test
+//    public void shouldIncreaseCurrentVolumeUnderMaxVolume() {
+//        Radio radio = new Radio();
+//        int currentVolume = radio.getCurrentVolume();
+//        int expected = 1;
+//        radio.increaseVolume();
+//        assertEquals(expected, radio.getCurrentVolume());
+//
+//
+//    }
 //    @Test
 //    public void shouldIncreaseCurrentVolumeEqualMaxVolume() {
 //        Radio radio = new Radio();
@@ -111,6 +104,16 @@ class RadioTest {
 //
 //
 //    }
+//@Test
+//public void shouldIncreaseCurrentVolumeEqualMinVolume() {
+//    Radio radio = new Radio();
+//    int currentVolume = radio.getCurrentVolume();
+//    int expected = 0;
+//    radio.decreaseVolume();
+//    assertEquals(expected, radio.getCurrentVolume());
+//
+//
+//}
 }
 
 
