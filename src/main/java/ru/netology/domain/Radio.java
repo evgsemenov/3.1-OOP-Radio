@@ -1,8 +1,8 @@
 package ru.netology.domain;
 
 public class Radio {
-    public final int minFrequency = 0;
-    public final int maxFrequency = 9;
+    private final int minFrequency = 0;
+    private final int maxFrequency = 9;
     private int currentFrequency;
     private final int minVolume = 0;
     private final int maxVolume = 10;
@@ -26,6 +26,14 @@ public class Radio {
 
     public int getCurrentFrequency() {
         return currentFrequency;
+    }
+
+    public int getMinFrequency() {
+        return minFrequency;
+    }
+
+    public int getMaxFrequency() {
+        return maxFrequency;
     }
 
     public void setCurrentFrequency(int currentFrequency) {

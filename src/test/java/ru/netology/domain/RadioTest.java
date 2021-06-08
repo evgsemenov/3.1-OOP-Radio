@@ -9,8 +9,8 @@ class RadioTest {
     @Test
     public void shouldIncreaseCurrentFrequencyUnderMaxFrequency() {
         Radio radio = new Radio();
-        int currentFrequency = radio.maxFrequency - 1;
-        int expected = radio.maxFrequency;
+        int currentFrequency = radio.getMaxFrequency() - 1;
+        int expected = radio.getMaxFrequency();
         radio.setCurrentFrequency(currentFrequency);
         radio.increaseFrequency();
         assertEquals(expected, radio.getCurrentFrequency());
@@ -19,8 +19,8 @@ class RadioTest {
     @Test
     public void shouldIncreaseCurrentFrequencyEqualMaxFrequency() {
         Radio radio = new Radio();
-        int currentFrequency = radio.maxFrequency;
-        int expected = radio.minFrequency;
+        int currentFrequency = radio.getMaxFrequency();
+        int expected = radio.getMinFrequency();
         radio.setCurrentFrequency(currentFrequency);
         radio.increaseFrequency();
         assertEquals(expected, radio.getCurrentFrequency());
