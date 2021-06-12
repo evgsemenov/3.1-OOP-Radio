@@ -13,7 +13,7 @@ public class Radio {
     }
 
     public Radio() {
-        this.userMaxFrequency = 10;
+        this.userMaxFrequency = 9;
     }
 
 
