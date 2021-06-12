@@ -5,7 +5,7 @@ public class Radio {
     private int userMaxFrequency;
     private int currentFrequency;
     private final int minVolume = 0;
-    private final int maxVolume = 10;
+    private final int maxVolume = 100;
     private int currentVolume;
 
     public Radio(int userMaxFrequency) {
