@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 
 public class Radio {
     private int minFrequency = 0;
-    private int userMaxFrequency = 10;
+    private int userMaxFrequency = 9;
     private int currentFrequency;
     private int minVolume = 0;
     private int maxVolume = 100;
