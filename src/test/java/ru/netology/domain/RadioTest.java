@@ -1,5 +1,6 @@
 package ru.netology.domain;
 
+import lombok.AllArgsConstructor;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -164,11 +165,13 @@ class RadioTest {
 
     @Test
     public void shouldUseUserMaxFrequencySettings() {
-        Radio radio = new Radio(50);
+        Radio radio = new Radio(0, 50, 9, 0, 100, 9);
         int currentFrequency = radio.getUserMaxFrequency();
         int expected = 50;
         radio.setCurrentFrequency(currentFrequency);
         assertEquals(expected, radio.getCurrentFrequency());
     }
+
+
 }
 
